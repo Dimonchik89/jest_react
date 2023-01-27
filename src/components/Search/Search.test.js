@@ -41,7 +41,8 @@ describe("Search component", () => {
         )
 
         userEvent.type(screen.getByRole('textbox'), "React")
-
+        
+        // screen.debug()
         expect(onChange).toHaveBeenCalledTimes(5)
     })
 
